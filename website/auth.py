@@ -2,13 +2,14 @@ from flask import Blueprint
 
 auth = Blueprint('auth', __name__)
 
-@auth.coute('/login')
+
+@auth.route('/login')
 def login():
     return "<p>Login</p>"
 
 @auth.route('logout')
-def logout ():
-    return "<p>logout</p>"
+def logout():
+    return "<p>Logout</p>"
 
 @auth.route('/sign-up')
 def sign_up():
